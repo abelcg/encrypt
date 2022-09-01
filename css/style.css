@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eff1fa;
+  font-family: "Raleway", sans-serif;
+}
+
+header > figure {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+
+header > figure img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  margin: 15px;
+}
+
+#textToEncrypt {
+  background: #eff1fa;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  padding: 15px 20px 15px 10px;
+  color: #1e2b7a;
+  text-align: left;
+  width: 98%;
+}
+
+#textToEncrypt::placeholder {
+  color: #1e2b7a;
+}
+
+#alert {
+  font-size: 1rem;
+}
+
+.d-none{
+  display: none;
+}
+
+.material-symbols-rounded {
+  color: #3e4ca7;
+  transform: translate(0, 5px);
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  margin: 10px 0;
+  border-radius: 35px;
+  border: none;
+  font-size: 1.5em;
+}
+
+.btn-primary {
+  background: #3e4ca7;
+  color: #fff;
+  box-shadow: 0 5px 10px grey;
+}
+
+.btn-primary:hover {
+  background: #ff6391;
+}
+
+.btn-primary-outline {
+  background: transparent;
+  border: 1px solid #3e4ca7;
+  color: #3e4ca7;
+  box-shadow: 0.5px 0.5px 10px grey inset;
+}
+
+.btn-primary-outline:hover {
+  border: 1px solid #ff6391;
+  color: #ff6391;
+}
+
+.encryptedTextArea {
+  text-align: center;
+  padding: 15px;
+  margin: 20px 0;
+  background: #fff;
+  box-shadow: 0.5px 0.5px 10px grey;
+  border-radius: 15px;
+}
+
+.encryptedTextArea h2 {
+  margin: 10px 0;
+}
+
+.inactive {
+  display: none;
+}
+
+.encryptedTextContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#encryptedText {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.2rem;
+  padding: 15px 20px 15px 10px;
+  color: #343d68;
+  background: #eff1fa;
+  text-align: left;
+  width: 98%;
+}
+
+.material-symbols-outlined {
+  margin: 0 5px;
+  transform: translate(0, 5px);
+}
+
+footer {
+  border-top: 1px solid #ff6391;
+  color: #fff;
+  text-align: center;
+  background: #6277dd;
+  padding: 25px 0;
+  margin-top: 15px;
+}
+
+/* media queries */
+/* dispositivos grandes */
+
+@media all and (min-width: 968px) {
+  header > figure {
+    width: 10%;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .textToEncryptArea {
+    width: 40vw;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    margin: 10px 5px;
+    width: 70%;
+  }
+
+  .container {
+    align-self: flex-start;
+  }
+  .encryptedTextArea {
+    position: relative;
+    bottom: 125px;
+    height: 140vh;
+    width: 50vw;
+  }
+}
+
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 967px) {
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    margin: 10px 5px;
+    width: 60%;
+  }
+  .encryptedTextArea figure {
+    display: none;
+  }
+}
+
+/* celulares */
+
+@media all and (min-width: 280px) and (max-width: 767px) {
+  .encryptedTextArea figure {
+    display: none;
+  }
+}
